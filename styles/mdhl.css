@@ -41,6 +41,7 @@
 #logo_register{
   width: 200px;
   margin-left: 5%;
+  
 }
 
 #nav_index1,
@@ -87,19 +88,12 @@
   margin-top: 20px;
   margin-bottom: 30px;
   width: auto;
-  height: 300px;
+  height: 280px;
   -webkit-box-shadow: 0px 0px 15px 5px #000000;
-  box-shadow: 0px 0px 15px 5px #000000;
+  box-shadow:   0px 0px 15px 5px #000000;
   transition: 0.5s; 
   object-fit:cover; /* imagen no se distorsione*/
   }
-
-
-#portada_index:hover{
-  transform:scale(1.2);
-
-}
-
 
 #subtitulo_index {
   text-align: center;
@@ -150,9 +144,9 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   justify-content: left;
   line-height: 40px;
-  text-align: start;
+  text-align: center;
   color: white;
-  font-size: larger;
+    font-size: larger;
   padding: 10px 50px 20px;
  }
 
@@ -300,8 +294,8 @@ transform:rotate3d(0,1,0,60deg);
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  align-items: center;
 }
-
 
 .conteiner_game1 {
   display: flex;
@@ -309,17 +303,17 @@ transform:rotate3d(0,1,0,60deg);
   justify-content: space-around;
   flex-wrap: nowrap;
   align-content: center;
-  align-items: stretch;
+  /* align-items: stretch; */
 }
 .article_game {
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content: center;
   font-family: Arial, Helvetica, sans-serif;
   text-align: left;
-  padding-left: 30px;
+  /* padding-left: 30px;
   margin-top: 25px;
-  margin-bottom: 30px;
+  margin-bottom: 30px; */
   line-height: 50px;
   
 }
@@ -354,7 +348,7 @@ transform:rotate3d(0,1,0,60deg);
 }
 
 #street_address{
-  width: 620px;
+  width: 220px;
 }
 
 #city, #zipcode{
@@ -380,3 +374,48 @@ transform:rotate3d(0,1,0,60deg);
 
 }
 
+
+@media (max-width: 768px) {
+  
+  .header_index,
+  .header_about,
+  .header_contact,
+  .header_rules,
+  .header_game,
+  .header_register{
+      flex-direction: column;
+      align-items: center;
+  }
+  #portada_index {
+
+    width: auto;
+    height: 150px;
+  }  
+  #nav_index1,
+#nav_about1,
+#nav_contact1,
+#nav_rules1,
+#nav_game1,
+#nav_register1{
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.conteiner_game1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  align-content: center;
+  align-items: stretch;
+}
+table,
+td,
+th {
+padding: 0;
+
+
+}
+
+}
