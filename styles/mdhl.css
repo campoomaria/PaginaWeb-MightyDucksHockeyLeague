@@ -81,19 +81,20 @@
 #portada_index {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: nowrap;
   align-content: flex-start;
-  align-items: normal;
   margin-top: 20px;
   margin-bottom: 30px;
   width: auto;
   height: 280px;
-  -webkit-box-shadow: 0px 0px 15px 5px #000000;
-  box-shadow:   0px 0px 15px 5px #000000;
-  transition: 0.5s; 
-  object-fit:cover; /* imagen no se distorsione*/
-  }
+
+}
+#portada_index img{
+  border: 1px solid black;
+  -webkit-box-shadow: 0px 0px 15px 5px #000000; 
+box-shadow: 0px 0px 15px 5px #000000;
+}
 
 #subtitulo_index {
   text-align: center;
